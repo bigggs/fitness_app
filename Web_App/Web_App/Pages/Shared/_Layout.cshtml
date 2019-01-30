@@ -1,4 +1,12 @@
 ﻿<!DOCTYPE html>
+<style>
+
+
+    body {
+        background-image: linear-gradient(180deg, #000000 25%, #ffffff 25%, #ffffff 50%, #000000 50%, #000000 75%, #ffffff 75%, #ffffff 100%);
+        background-size: 1800.00px 1800.00px;
+    }
+</style>
 <html>
 <head>
     <link rel="stylesheet" href="~/css/style.css">
@@ -18,14 +26,7 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<style>
 
-
-    body {
-        background-image: linear-gradient(180deg, #000000 25%, #ffffff 25%, #ffffff 50%, #000000 50%, #000000 75%, #ffffff 75%, #ffffff 100%);
-        background-size: 1800.00px 1800.00px;
-    }
-</style>
 <body>
     <div id="app">
         <div>
@@ -36,7 +37,7 @@
                     <div class="navbar-header">
 
 
-                        </button>
+                        
                         <a asp-page="/Index" class="navbar-brand">Personal Trainer</a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -50,6 +51,10 @@
                             <li><a asp-page="/Arms">Arms</a></li>
                             <li><a asp-page="/Core">Core</a></li>
                             <li><a asp-page="/Cardio">Cardio</a></li>
+                            <li><a asp-page="/Students/Index">Trainers</a></li>
+                            <li><a asp-page="/Courses/Index">Courses</a></li>
+                            <li><a asp-page="/Instructors/Index">Routines</a></li>
+                            <li><a asp-page="/Departments/Index">Gyms</a></li>
                         </ul>
                         <partial name="_LoginPartial" />
                     </div>
@@ -88,7 +93,7 @@
             </script>
             <script src="~/js/site.min.js" asp-append-version="true"></script>
         </environment>
-
+        </div>
         @RenderSection("Scripts", required: false)
 
 </body>
